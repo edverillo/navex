@@ -25,7 +25,9 @@ $PATH is the path to the schema.csv file, and $APPLICATION is the application to
 
 - Edit joern/projects/extensions/joern-php/build.gradle as explained in the file. 
 
-- Follow the rest of the instructions on how to generate code property graphs with Joern and import them into Neo4j.
+- Follow the rest of the instructions on how to generate code property graphs with Joern and import them into Neo4j*.
+
+- *please check this https://github.com/aalhuz/batch-importer2.1. It has the missing binary that you will need to export your graph into Neo4j. 
 
 ## Graph Traversals guided by our Attack Dictionary ##
 
@@ -64,7 +66,7 @@ Then, point to your Neo4J installation and start the server.
                			
 
 ## Application crawling ##
-We have extended crawler4j in the fork https://github.com/aalhuz/crawler4j to allow for web forms and JavaScript reasoning.  
+We have extended crawler4j in the fork https://github.com/aalhuz/crawler4j/tree/navex to allow for web forms and JavaScript reasoning.  
 - To run the extended crawler and construct the Navigation Graph, edit "run.pl" in navex directory as explained in the script. Then, run "run.pl" as the following 
             
             cd navex
